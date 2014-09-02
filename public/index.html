@@ -1,0 +1,66 @@
+
+<!DOCTYPE html><html><head><title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="/css/gumby.css" rel="stylesheet" type="text/css">
+<link href="/css/fonts.css" rel="stylesheet" type="text/css">
+<link href="/css/base.css" rel="stylesheet" type="text/css">
+<link href="/css/animate.css" rel="stylesheet" type="text/css">
+<link href="/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
+<link href="/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
+<script src="/js/libs/angular/1.1.5/angular.min.js"></script>
+<script src="/js/libs/moment/moment.min.js"></script>
+<script src="/js/libs/moment/moment-es.js"></script>
+<script src="/js/libs/numberToText-es.js"></script>
+<script src="/js/libs/jquery-1.9.1.min.js"></script>
+<script src="/owl-carousel/owl.carousel.js"></script>
+<meta charset="utf-8"></head>
+
+<body>
+  <nav id="navbar-main-nav" class="navbar">
+  <div class="row">
+    <a class="toggle" gumby-trigger="#navbar-main-nav #main-nav" href="#"><i class="icon-menu"></i></a>
+    <nav class="ten columns pull_right">
+      <ul id="main-nav">
+        <li><a href="#"><span>Feed </span><i class="icon-archive" title="Features"></i></a>
+        </li>
+        <li>
+          <a href="#"><span>How to use it? </span><i class="icon-doc-text" title="Documentation"></i></a>
+        </li>
+        <li><a href="#"><span>Personalize </span><i class="icon-cog" title="Customize"></i></a></li>
+        <li><a href="" target="_blank"><span>Community </span><i class="icon-chat" title="community"></i></a></li>
+        <li>
+          <p class="medium pretty default btn icon-github icon-left">
+            <a href="https://github.com/GumbyFramework/Gumby">GitHub</a>
+          </p>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</nav>
+
+
+    </div>
+    <div class="row">
+      <div ng-app="fact-followers">
+        <div ng-view id="app" class=" ng-scope-view">
+        </div>
+      </div>
+    </div>
+ 
+</body>
+
+
+
+<script src="/js/libs/masonry.pkgd.min.js"></script>
+<script src="/js/apps/core/controllers/main.js"></script>
+<script src="/js/apps/core/controllers/feed.js"></script>
+<script src="/js/apps/core/controllers/detail.js"></script>
+<script src="/js/apps/core/controllers/wizard/compose.js"></script>
+<script src="/js/apps/core/controllers/wizard/create-fact.js"></script>
+<script src="/js/apps/core/controllers/wizard/thanks.js"></script>
+<script src="/js/apps/core/controllers/wizard/thanks-url.js"></script>
+<script src="/js/apps/core/controllers/wizard/validate-fact.js"></script>
+<script src="/js/apps/core/app.js"></script>
+
+
+</html>

@@ -1,0 +1,32 @@
+<div ng-hide="counter === 3">
+  <h1> Validate {{counter}} of 3</h1>
+  <p> In order to publish your article, please validate 3 facts.</p>
+  <div class="row">
+  <div id="owl-demo" style="display:none">
+        <div class="item" ng-repeat="item in facts">
+          <div class="box">
+           
+            <div class="content centered">
+                      <h4 class="title"> {{item.title}}</h5>
+                      <h5>{{item.where}} by <strong>{{item.name}}</strong></h5>
+                       <div class="medium primary btn icon-left entypo icon-check">
+                       	<a ng-click="count()" href=""></a>
+                      </div>
+                       <div class="medium danger btn icon-left entypo icon-cancel">
+                       <a  ng-click="count()"href=""></a>
+                      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div class ="row" ng-show="counter === 3">
+<h1> Congratulations, Martin </h1>
+<h2> Your article and facts have been published </h2>
+
+<h3> 
+   <div class="medium btn twitter icon-left entypo icon-twitter">
+    <a href="">Tweet your article</a>
+    </div>
+</div>
